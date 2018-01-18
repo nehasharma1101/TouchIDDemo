@@ -12,6 +12,8 @@
 		91C01492201097B800F4ECE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91C01490201097B800F4ECE1 /* Main.storyboard */; };
 		91C01494201097B900F4ECE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91C01493201097B900F4ECE1 /* Assets.xcassets */; };
 		91C01497201097B900F4ECE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91C01495201097B900F4ECE1 /* LaunchScreen.storyboard */; };
+		91C0149F201097E500F4ECE1 /* TouchIDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C0149E201097E500F4ECE1 /* TouchIDViewController.swift */; };
+		91C014A22010980C00F4ECE1 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C014A12010980C00F4ECE1 /* LocalAuthentication.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		91C01493201097B900F4ECE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91C01496201097B900F4ECE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91C01498201097B900F4ECE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91C0149E201097E500F4ECE1 /* TouchIDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchIDViewController.swift; sourceTree = "<group>"; };
+		91C014A12010980C00F4ECE1 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91C014A22010980C00F4ECE1 /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,7 @@
 			children = (
 				91C0148B201097B800F4ECE1 /* TouchIDDemo */,
 				91C0148A201097B800F4ECE1 /* Products */,
+				91C014A02010980C00F4ECE1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				91C0148C201097B800F4ECE1 /* AppDelegate.swift */,
+				91C0149E201097E500F4ECE1 /* TouchIDViewController.swift */,
 				91C0148E201097B800F4ECE1 /* ViewController.swift */,
 				91C01490201097B800F4ECE1 /* Main.storyboard */,
 				91C01493201097B900F4ECE1 /* Assets.xcassets */,
@@ -62,6 +69,14 @@
 				91C01498201097B900F4ECE1 /* Info.plist */,
 			);
 			path = TouchIDDemo;
+			sourceTree = "<group>";
+		};
+		91C014A02010980C00F4ECE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91C014A12010980C00F4ECE1 /* LocalAuthentication.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91C0148F201097B800F4ECE1 /* ViewController.swift in Sources */,
+				91C0149F201097E500F4ECE1 /* TouchIDViewController.swift in Sources */,
 				91C0148D201097B800F4ECE1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
